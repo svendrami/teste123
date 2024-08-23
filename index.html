@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecBlog - o seu blog de Tecnologia</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+    <script>
+      function mouseoverPass(obj) {
+        var obj = document.getElementById('myPassword')
+        obj.type = 'text'
+      }
+      function mouseoutPass(obj) {
+        var obj = document.getElementById('myPassword')
+        obj.type = 'password'
+      }
+    </script>
+  </head>
+  <body>
+    <div id="area-cabecalho">
+      <div id="area-logo">
+        <h1>Tec<span class="branco">Blog</span></h1>
+      </div>
+      <div id="area-menu">
+        <a href="index.html">Home</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="celulares.html">Celulares</a>
+        <a href="informatica.html">Informática</a>
+        <a href="eletronicos.html">Eletrônicos</a>
+      </div>
+      <!-- <div> -->
+    </div>
+    <div id="area-principal">
+      <div id="area-postagens">
+        <!--abertura postagem-->
+        <div class="postagem">
+          <h2>Título da postagem 1</h2>
+          <input type="password" name="password" id="myPassword" size="30" />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4jd2SvW3DMBBGbwQVKlyo4BGC4FKFS4+TATKCNxAggkeoSpHSRQbwAB7AA7hQoUKFLH6E2qQQHfgHdpo0yQHX8T3exyPR/ytlQ8kOhgV7FvSx9+xglA3lM3DBgh0LPn/onbJhcQ0bv2SHlgVgQa/suFHVkCg7bm5gzB2OyvjlDFdDcoa19etZMN8Qp7oUDPEM2KFV1ZAQO2zPMBERO7Ra4JQNpRa4K4FDS0R0IdneCbQLb4/zh/c7QdH4NL40tPXrovFpjHQr6PJ6yr5hQV80PiUiIm1OKxZ0LICS8TWvpyyOf2DBQQtcXk8Zi3+JcKfNafVsjZ0WfGgJlZZQxZjdwzX+ykf6u/UF0Fwo5Apfcq8AAAAASUVORK5CYII="
+            onclick="mouseoverPass();"
+            onmouseout="mouseoutPass();"
+            id="olho"
+            class="olho"
+          />
+          <span class="data-postagem">postado em 24 de julho</span>
+          <img width="620px" src="imagens/imagem1.jpg" alt="" />
+          <p class="p_moderno">
+            Lorem <strong>sit amet consectetur</strong> sit amet consectetur
+            adipisicing elit. Veritatis ipsa rerum, quis dolores consequatur
+            pariatur corrupti deleniti non! Soluta quae fugiat error facere iure
+            obcaecati nesciunt quasi iusto voluptas deleniti.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            molestias sequi nostrum odit iusto commodi possimus. Corrupti hic
+            omnis id autem perferendis repellat. Tenetur laborum impedit
+            blanditiis adipisci rerum totam.
+          </p>
+          <a id="leia" href="">Leia Mais</a>
+        </div>
+        <!--fechamento da postagem-->
+      </div>
+      <div id="area-lateral">menu lateral</div>
+      <div id="rodape">Todos os direitos reservados</div>
+    </div>
+  </body>
+</html>
